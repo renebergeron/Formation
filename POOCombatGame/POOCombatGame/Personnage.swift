@@ -36,4 +36,12 @@ class Personnage {
             arme!.ameliorerArme();
         }
     }
+    
+    func recevoirDegats(degats : Int) {
+        pointsDeVie -= degats
+        
+        if(pointsDeVie < 0){
+            pointsDeVie = 0
+        }
+    }
 }

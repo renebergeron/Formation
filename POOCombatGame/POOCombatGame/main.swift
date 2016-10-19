@@ -41,6 +41,14 @@ func getPersonnage(type : Int, nom : String) -> Personnage? {
     return personnage
 }
 
+
+var attaquant : Personnage? = nil
+var attaque  : Personnage? = nil
+
+var round : Int = 0
+var action : Int = 0
+
+
 repeat {
     
     
@@ -71,25 +79,54 @@ repeat {
     }
     
     
-    print("Nom : \(personnage1!.nom)")
-    print("Vie : \(personnage1!.pointsDeVie)")
-    if(personnage1!.arme != nil){
-        print("Dégats de son arme : \(personnage1!.arme?.degatsInfliges())")
+    
+    
+    if(round % 2 == 0) {
+        attaquant = personnage1
+        attaque = personnage2
+    } else {
+        attaquant = personnage2
+        attaque = personnage1
+    }
+        
+        
+    print("Nom : \(attaquant!.nom)")
+    print("Vie : \(attaquant!.pointsDeVie)")
+    if(attaquant!.arme != nil){
+        print("Dégats de son arme : \(attaquant!.arme!.degatsInfliges())")
     } else {
         print("Le personnage n'a pas d'arme")
     }
     
-    var action : Int = readInput()
-
-    repeat {
-        print("")
+    repeat{
+    
+        print("Quel action choisissez vous?")
+        print("1. Attaquer")
+        print("2. Améliorer son arme")
         
-    } while (action < 1 || action > 2)
+        action = readInput()
+    
+    } while(action < 1 || action > 2)
     
     
     
+    switch action {
+        case 1 :
+            attaque!.recevoirDegats(degats : attaquant!.attaquer())
+        case 2 :
+            attaquant!.ameliorerArme()
+        default :
+            break
+    }
     
-} while(isGameFinished != false)
+    if(attaque!.pointsDeVie == 0){
+        isGameFinished = true
+    }
+    
+    
+    round += 1
+    
+} while (isGameFinished == false)
 
 
 
