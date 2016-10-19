@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8E95D291DAFAD5900066AF7 /* Personnage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E95D281DAFAD5900066AF7 /* Personnage.swift */; };
+		C8E95D2B1DAFAD8600066AF7 /* Classe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E95D2A1DAFAD8600066AF7 /* Classe.swift */; };
+		C8E95D2D1DAFAEEC00066AF7 /* Arme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E95D2C1DAFAEEC00066AF7 /* Arme.swift */; };
+		C8E95D2F1DAFB21000066AF7 /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E95D2E1DAFB21000066AF7 /* Arc.swift */; };
+		C8E95D311DAFB23000066AF7 /* Epee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E95D301DAFB23000066AF7 /* Epee.swift */; };
+		C8E95D331DAFB28100066AF7 /* Sceptre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E95D321DAFB28100066AF7 /* Sceptre.swift */; };
 		F8D947331DAE7286001E72AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D947321DAE7286001E72AD /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C8E95D281DAFAD5900066AF7 /* Personnage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personnage.swift; sourceTree = "<group>"; };
+		C8E95D2A1DAFAD8600066AF7 /* Classe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classe.swift; sourceTree = "<group>"; };
+		C8E95D2C1DAFAEEC00066AF7 /* Arme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arme.swift; sourceTree = "<group>"; };
+		C8E95D2E1DAFB21000066AF7 /* Arc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arc.swift; sourceTree = "<group>"; };
+		C8E95D301DAFB23000066AF7 /* Epee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epee.swift; sourceTree = "<group>"; };
+		C8E95D321DAFB28100066AF7 /* Sceptre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sceptre.swift; sourceTree = "<group>"; };
 		F8D9472F1DAE7286001E72AD /* POOCombatGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = POOCombatGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D947321DAE7286001E72AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				F8D947321DAE7286001E72AD /* main.swift */,
+				C8E95D281DAFAD5900066AF7 /* Personnage.swift */,
+				C8E95D2E1DAFB21000066AF7 /* Arc.swift */,
+				C8E95D2A1DAFAD8600066AF7 /* Classe.swift */,
+				C8E95D2C1DAFAEEC00066AF7 /* Arme.swift */,
+				C8E95D301DAFB23000066AF7 /* Epee.swift */,
+				C8E95D321DAFB28100066AF7 /* Sceptre.swift */,
 			);
 			path = POOCombatGame;
 			sourceTree = "<group>";
@@ -120,7 +138,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E95D2B1DAFAD8600066AF7 /* Classe.swift in Sources */,
 				F8D947331DAE7286001E72AD /* main.swift in Sources */,
+				C8E95D2F1DAFB21000066AF7 /* Arc.swift in Sources */,
+				C8E95D2D1DAFAEEC00066AF7 /* Arme.swift in Sources */,
+				C8E95D311DAFB23000066AF7 /* Epee.swift in Sources */,
+				C8E95D331DAFB28100066AF7 /* Sceptre.swift in Sources */,
+				C8E95D291DAFAD5900066AF7 /* Personnage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +274,7 @@
 				F8D947381DAE7286001E72AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
